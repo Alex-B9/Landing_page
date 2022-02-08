@@ -1,0 +1,19 @@
+/* body */
+.logo{   
+    border: 1px solid rgb(255,114,53);
+    width: 40px;
+    height: 40px;
+    border-radius: 50% 50% 50% 50%;
+    background-color: rgb(255,114,53);
+}
+.logo p{
+    text-align: center;
+    position: relative;
+    top: -05px;
+    color: white;
+}
+/* header */
+
+/* main */
+
+/* footer */
