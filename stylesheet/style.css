@@ -2,17 +2,10 @@
 
 /* header */
 
-header{
-    height: 100vh;
-    width: 100vw;
-
-    background-color: white;
-}
-
 /*Nav*/
 
 .menutop Nav{
-    margin-top: 05%;
+    margin-top: 1.5rem;
 }
 nav{
     margin: 0 auto;
@@ -73,29 +66,61 @@ nav{
 
     display: flex;
     justify-content: space-between;
-    width: 20%;
+    width: 30%;
     height: 80px;
 }
-
+.menu a{
+    color: #6C6C71;
+    text-decoration: none;
+}
 
 /*containeur*/
 
 .containeur{
     display: flex;
+    color: rgb(215,215,215);
+    height: 100vh;
 }
 .content{
-    margin-left: 0 auto;
+    margin: 0 auto;
+    background-color: blue;
+    width: 80vh;
+    height: 480px;
+
+
+}
+.content h1{
+    color: rgb(41,40,48);
+    font-size: 90px;
+    line-height: 80px;
+    letter-spacing: 2px;
+}
+/*.content p:first-child{
+    color: rgb(198,198,198);
+    font-size: 80px;
+    text-align: center;
+    margin-top: -65px;
+}*/
+.buttoncontent{
+    display: flex;
+    align-items: center;
 }
 .buttoncontent button{
     border: 1px solid rgb(255,114,53);
     border-radius: 10px;
 
-    width: 120px;
-    height: 50px;
+    width: 180px;
+    height: 60px;
     background-color: rgb(255,114,53);
     
+    font-size: 20px;
     color: white;
     font: bold;
+}
+.buttoncontent p{   
+    color: yellow;
+    font-size: 22px;
+    text-align: center;
 }
 .arrow {  
     border: solid white;
@@ -109,8 +134,9 @@ nav{
 }
 .contimage{
     display: flex;
-    position: relative;
-    margin-right: auto;
+    justify-content: flex-end;
+    width: 450px;
+    height: 400px;
 }
 
 /* main */
@@ -130,8 +156,13 @@ nav{
 .logom{
     height: 100px;
     width: 100px;
-
-    
+}
+.cloud button{
+    border: 1px none white;
+    background-color: white;
+    color: rgb(255,159,118);
+    text-transform: capitalize;
+    font-size: 20px;
 }
 
 /* footer */
