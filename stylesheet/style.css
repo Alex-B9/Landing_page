@@ -1,9 +1,41 @@
 /* body */
+
+/* header */
+
+header{
+    height: 100vh;
+    width: 100vw;
+
+    background-color: white;
+}
+
+/*Nav*/
+
+.menutop Nav{
+    margin-top: 05%;
+}
+nav{
+    margin: 0 auto;
+    width: 80vw;
+    display: flex;
+    justify-content: space-between;
+
+    color: black;
+}
+.navleft{
+    width: auto;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+}
+
 .logo{   
     border: 1px solid rgb(255,114,53);
     width: 40px;
     height: 40px;
-    border-radius: 50% 50% 50% 50%;
+    border-radius: 50%;
+    margin-right: 10px;
     background-color: rgb(255,114,53);
 }
 .logo p{
@@ -11,9 +43,59 @@
     position: relative;
     top: -05px;
     color: white;
+    font-weight: bold;
 }
-/* header */
+.buttonright{
+    border: 1px solid rgb(255,114,53);
+    border-radius: 10px;
+
+    width: 120px;
+    height: 50px;
+    background-color: white;
+
+    color: rgb(255,114,53);
+    font:bold;
+} 
+.buttonright:hover{
+    border: 1px solid rgb(255,114,53);
+    border-radius: 10px;
+
+    width: 120px;
+    height: 50px;
+    background-color: rgb(255,114,53);
+
+    color: white;
+    font:bold;
+}
+
+.menu{
+    list-style: none;
+
+    display: flex;
+    justify-content: space-between;
+    width: 20%;
+    height: 80px;
+}
 
 /* main */
+
+.logom img{
+    max-width: 100%;
+    max-height: 100%;
+    filter: grayscale(100%);
+    object-fit: contain;
+}
+.logo-marque{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+.logom{
+    height: 100px;
+    width: 100px;
+
+    
+}
 
 /* footer */
