@@ -77,6 +77,42 @@ nav{
     height: 80px;
 }
 
+
+/*containeur*/
+
+.containeur{
+    display: flex;
+}
+.content{
+    margin-left: 0 auto;
+}
+.buttoncontent button{
+    border: 1px solid rgb(255,114,53);
+    border-radius: 10px;
+
+    width: 120px;
+    height: 50px;
+    background-color: rgb(255,114,53);
+    
+    color: white;
+    font: bold;
+}
+.arrow {  
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+}
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+.contimage{
+    display: flex;
+    position: relative;
+    margin-right: auto;
+}
+
 /* main */
 
 .logom img{
