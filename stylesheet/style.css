@@ -1,5 +1,7 @@
 /* body */
-
+body{
+    overflow-x: hidden; /*cacher le surplus (scroll) horizontal*/
+}
 /* header */
 
 /*Nav*/
@@ -78,7 +80,9 @@ nav{
 
 .containeur{
     display: flex;
-    height: 100vh;
+    height: 80vh;
+    width: 1050px;
+    margin: 0 auto;
 }
 .content:first-child p{
     color: rgb(189,189,189);
@@ -88,9 +92,6 @@ nav{
     margin: 0 auto;
     width: 80vh;
     height: 480px;
-    position: relative;
-    top: 50px;
-    left: 80px;
 }
 .content h1{
     color: rgb(41,40,48);
@@ -100,6 +101,7 @@ nav{
     margin: 0 auto;
 }
 .buttoncontent{
+    padding-top: 80px;
     display: flex;
     align-items: center;
 }
@@ -145,8 +147,6 @@ nav{
 .contimage img{
     width: 550px;
     height: 500px;
-    position: relative;
-    right: 200px;
 }
 
 /* main */
@@ -160,7 +160,7 @@ nav{
 }
 .over{
     background-color: rgb(255,114,53);
-    width: 100vw;
+    width: 100%;
     height: 85%;
 }
 .over img{
@@ -168,7 +168,7 @@ nav{
     width: 1100px;
     height: 600px;
     display: block;
-    padding-top: 50px;
+    padding-top: 85px;
 }
 .logom img{
     max-width: 100%;
@@ -189,12 +189,20 @@ nav{
     filter: opacity(0.3);
     padding-top: 60px;
 }
-.cloud button{
-    border: 1px none white;
-    background-color: white;
-    color: rgb(255,159,118);
-    text-transform: capitalize;
-    font-size: 20px;
+.About{
+    display: flex;
+    height: 80vh;
+    width: 1050px;
+    margin: 0 auto;
 }
+.Aboutext{
 
+}
+.aboutimg {}
+
+
+.section-a{
+    width: 100vw;
+    height: 100vh;
+}
 /* footer */
