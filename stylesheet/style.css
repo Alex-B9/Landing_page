@@ -78,29 +78,27 @@ nav{
 
 .containeur{
     display: flex;
-    color: rgb(215,215,215);
     height: 100vh;
+}
+.content:first-child p{
+    color: rgb(189,189,189);
+    font-size: 25px;
 }
 .content{
     margin: 0 auto;
-    background-color: blue;
     width: 80vh;
     height: 480px;
-
-
+    position: relative;
+    top: 50px;
+    left: 80px;
 }
 .content h1{
     color: rgb(41,40,48);
     font-size: 90px;
     line-height: 80px;
     letter-spacing: 2px;
+    margin: 0 auto;
 }
-/*.content p:first-child{
-    color: rgb(198,198,198);
-    font-size: 80px;
-    text-align: center;
-    margin-top: -65px;
-}*/
 .buttoncontent{
     display: flex;
     align-items: center;
@@ -117,8 +115,20 @@ nav{
     color: white;
     font: bold;
 }
+.buttoncontent button:hover{
+    border: 1px solid rgb(255,114,53);
+    border-radius: 10px;
+
+    width: 180px;
+    height: 60px;
+    background-color: white;
+    
+    font-size: 20px;
+    color: rgb(255,114,53);
+    font: bold;
+}
 .buttoncontent p{   
-    color: yellow;
+    color: rgb(202,202,202);
     font-size: 22px;
     text-align: center;
 }
@@ -132,30 +142,52 @@ nav{
     transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
 }
-.contimage{
-    display: flex;
-    justify-content: flex-end;
-    width: 450px;
-    height: 400px;
+.contimage img{
+    width: 550px;
+    height: 500px;
+    position: relative;
+    right: 200px;
 }
 
 /* main */
 
+.overview{
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.over{
+    background-color: rgb(255,114,53);
+    width: 100vw;
+    height: 85%;
+}
+.over img{
+    margin: 0 auto;
+    width: 1100px;
+    height: 600px;
+    display: block;
+    padding-top: 50px;
+}
 .logom img{
     max-width: 100%;
     max-height: 100%;
-    filter: grayscale(100%);
     object-fit: contain;
 }
 .logo-marque{
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 100%;
+    justify-content: space-between;
+    width: 80%;
+    height: 15%;
+    margin: 0 auto;
+    filter: grayscale(1);
 }
 .logom{
-    height: 100px;
-    width: 100px;
+    height: 40px;
+    width: 200px;
+    filter: opacity(0.3);
+    padding-top: 60px;
 }
 .cloud button{
     border: 1px none white;
