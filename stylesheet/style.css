@@ -147,6 +147,8 @@ nav{
 .contimage img{
     width: 550px;
     height: 500px;
+    
+    
 }
 
 /* main */
@@ -182,6 +184,7 @@ nav{
     height: 15%;
     margin: 0 auto;
     filter: grayscale(1);
+    margin-bottom: 150px;
 }
 .logom{
     height: 40px;
@@ -195,14 +198,140 @@ nav{
     width: 1050px;
     margin: 0 auto;
 }
-.Aboutext{
-
+.aboutimg{
+    position: relative;
+    left: 100px;
 }
-.aboutimg {}
-
 
 .section-a{
     width: 100vw;
     height: 100vh;
+}
+.Aboutext h1{
+    color: rgb(41,40,48);
+    font-size: 80px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.Aboutext span{
+    color: rgb(189,189,189);
+    margin-bottom: 150px;
+    text-transform: uppercase;
+}
+.Aboutext p{
+    color: rgb(214,214,214);
+    text-transform: capitalize;
+    font-size: 20px;
+}
+.Aboutext button{
+    border: 1px none rgb(255,114,53);
+    border-radius: 10px;
+
+    width: 180px;
+    height: 60px;
+
+    background-color: white;
+    color: rgb(255,114,53);
+    text-transform: capitalize;
+    font-size: 16px;
+    text-align: center;
+
+    margin: 0 auto;
+    margin-left: 0 auto;
+}
+.Aboutext button:hover{
+    border: 1px none rgb(255,114,53);
+    border-radius: 10px;
+
+    width: 180px;
+    height: 60px;
+
+    background-color: rgb(255,114,53);
+    color: white;
+    text-transform: capitalize;
+    font-size: 16px;
+    margin: 0 auto;
+}
+.choose{
+    width: 100vw;
+    height: 100vh;
+}
+.choose h1{
+    font-size: 65px;
+    color: rgb(41,40,48);
+    text-align: center;
+}
+.select{
+    display: flex;
+    justify-content: space-between;
+
+    width: 75vw;
+    max-height: 520px;
+
+    margin: 90px auto 0 auto;
+    gap: 40px;
+}
+.card{
+    width: 33%;
+    height: 480px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    border: 1px solid #80808021;
+    border-radius: 12px;
+
+    padding: 0 40px;
+}
+.card:hover {
+    background-color: #FFF;
+    box-shadow: 1px 1px 10px lightgray;
+}
+.card ul{
+    list-style: none;
+}
+.card ul li::before{
+    content: '✓';
+}
+.card h3{
+    font-size: 25px;
+}
+.card button{
+    border: 1px solid rgb(255,114,53);
+    border-radius: 10px;
+
+    width: 180px;
+    height: 60px;
+
+    background-color: white;
+    color: rgb(255,114,53);
+    font-size: 16px;
+}
+.card button:hover{
+    border: 1px solid rgb(255,114,53);
+    border-radius: 10px;
+
+    width: 180px;
+    height: 60px;
+
+    background-color: rgb(255,114,53);
+    color: white;
+    font-size: 16px;
+}
+.card strong{
+    font: bold;
+    font-size: 25px;
+}
+.card p{
+    position: relative;
+    margin: -10px
+}
+.year{
+    color: rgb(197,197,197);
+}
+.up{
+    
+    color: rgb(197,197,197);
 }
 /* footer */
