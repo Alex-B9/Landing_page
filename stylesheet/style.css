@@ -1,7 +1,16 @@
+/*Fonts*/
+@font-face {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    src: url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@0,300;0,700;1,300&family=Roboto:ital,wght@0,100;0,300;1,100;1,300&display=swap" rel="stylesheet');
+}
+
 /* body */
 body{
     overflow-x: hidden; /*cacher le surplus (scroll) horizontal*/
+    font-family: 'Open Sans Condensed',sans-serif, 'Roboto', sans-serif;
 }
+
 /* header */
 
 /*Nav*/
@@ -86,7 +95,7 @@ nav{
 }
 .content:first-child p{
     color: rgb(189,189,189);
-    font-size: 25px;
+    font-size: 20px;
 }
 .content{
     margin: 0 auto;
@@ -95,7 +104,7 @@ nav{
 }
 .content h1{
     color: rgb(41,40,48);
-    font-size: 90px;
+    font-size: 70px;
     line-height: 80px;
     letter-spacing: 2px;
     margin: 0 auto;
@@ -105,7 +114,7 @@ nav{
     display: flex;
     align-items: center;
 }
-.buttoncontent button{
+.button2{
     border: 1px solid rgb(255,114,53);
     border-radius: 10px;
 
@@ -117,7 +126,7 @@ nav{
     color: white;
     font: bold;
 }
-.buttoncontent button:hover{
+.button2:hover{
     border: 1px solid rgb(255,114,53);
     border-radius: 10px;
 
@@ -128,6 +137,12 @@ nav{
     font-size: 20px;
     color: rgb(255,114,53);
     font: bold;
+}
+.button2:hover > .arrow{
+    border: solid rgb(255,114,53);
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
 }
 .buttoncontent p{   
     color: rgb(202,202,202);
@@ -290,6 +305,7 @@ nav{
 }
 .card ul{
     list-style: none;
+    line-height: 30px;
 }
 .card ul li::before{
     content: '✓';
@@ -319,6 +335,36 @@ nav{
     color: white;
     font-size: 16px;
 }
+.button3{
+    border: 1px solid white;
+    border-radius: 10px;
+
+    width: 180px;
+    height: 60px;
+    background-color: white;
+    
+    font-size: 20px;
+    color: rgb(255,114,53);
+    font: bold;
+}
+.button3:hover{
+    border: 1px solid white;
+    border-radius: 10px;
+
+    width: 180px;
+    height: 60px;
+    background-color: rgb(255,114,53);
+    
+    font-size: 20px;
+    color: white;
+    font: bold;
+}
+.button3:hover > .arrow{
+    border: solid #FFF;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+}
 .card strong{
     font: bold;
     font-size: 25px;
@@ -334,4 +380,168 @@ nav{
     
     color: rgb(197,197,197);
 }
+.download{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+
+    
+    background-color: rgb(255,114,53);
+}
+.downl{
+    height: 100vh;
+    width: 100%;
+
+    text-align: center;
+}
+.downimg{
+    position: relative;
+    bottom: 10px;
+}
+/*.downl button{
+    border: 1px solid white;
+    border-radius: 10px;
+
+    width: 180px;
+    height: 60px;
+    background-color: white;
+    
+    font-size: 20px;
+    color: rgb(255,114,53);
+    font: bold;
+}*/
+.arrow-{  
+    border: solid rgb(255,114,53);
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+}
+.downl h2{
+    font-size: 80px;
+    color: white;
+    margin-bottom: 0;
+}
+.downl p{
+    font-size: 30px;
+    color: white;
+    margin-top: 0;
+}
 /* footer */
+ .foot{
+     display: flex;
+     justify-content: space-around;
+     padding-top: 50px;
+ }
+.foot ul{
+    list-style: none;
+}
+.xpense .logo{}
+
+.formu{
+    width: 350px;
+    height: 60px;
+
+    border: 1px solid black;
+    border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+}
+.formu input:first-of-type {
+    width: 210px;
+    
+    line-height: 2.5em;
+
+    margin-left: 15px;
+    margin-right: 5px;
+
+    border: none;
+    outline: none;
+}
+
+.formu input:last-of-type {
+    width: 100px;
+    height: 45px;
+
+    color: white;
+    background-color: #FF7235;
+
+    border: none;
+    border-radius: 8px;
+}
+.newsletter p{
+    color: rgb(189,189,189);
+}
+.newsletter h4{}
+.newsletter h5{
+    color: rgb(189,189,189);
+}
+.footer{
+    display: flex;
+    justify-content: space-around;
+}
+.footer ul{
+    list-style: none;
+
+    display: flex;
+    justify-content: space-around;
+    width: 15%;
+    height: 50px;
+}
+.logof{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    gap: 5px;
+    filter: grayscale(1);
+    filter: opacity(0.3);
+}
+.foot a{
+    color: #6C6C71;
+    text-decoration: none;
+}
+.footer a{
+    text-decoration: none;
+}
+.logox{   
+    border: 1px solid rgb(255,114,53);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+    background-color: rgb(255,114,53);
+
+    color: white;
+    font: bold;
+}
+.flinks{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    line-height: 25px;
+}
+.legal{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    line-height: 25px;
+}
+.xpense{
+    display: flex;
+}
+.terms{
+    display: flex;
+    color: black;
+}
+.terms a{
+    text-decoration: none;
+    color: black;
+}
+.copy{
+    text-align: center;
+    position: relative;
+    bottom: 15px;
+}
+.foot{
+    text-transform: capitalize;
+}
